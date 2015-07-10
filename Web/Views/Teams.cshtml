@@ -1,0 +1,23 @@
+@inherits Nancy.ViewEngines.Razor.NancyRazorViewBase<Web.Models.TeamsModel>
+
+<html>
+<head>
+
+</head>
+<body>
+    <h1>HOME</h1>
+    <h2>Teams</h2>
+
+<form action="/teams" method="POST">
+    <h4>List of Simple (primitive) types</h4>
+    <input type="text" name="TeamNames" value="@Model.TeamNames[0]"/><br/>
+    <input type="text" name="TeamNames" value="@Model.TeamNames[1]"/><br/>
+
+    <h4>List of Complex types</h4>
+    <input type="text" name="Name_0" value="@Model.Teams[0].Name"/><br/>
+    <input type="text" name="Name_1" value="@Model.Teams[1].Name"/><br/>
+    <br/>
+    <input type="submit" value="Bind the things"/>
+</form>
+</body>
+</html>
