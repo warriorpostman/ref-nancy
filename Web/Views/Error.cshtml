@@ -1,0 +1,17 @@
+@inherits Nancy.ViewEngines.Razor.NancyRazorViewBase<dynamic>
+
+<html>
+<head>
+
+</head>
+<body>
+    <h1>HOME</h1>
+<h3>@Model.Message</h3>
+
+<a href="/teams">Model binding example with sportsing organizations</a>
+
+    <h2 style="color:red">Uh oh, looks like some error type thing happened</h2>
+    Special Message: 
+    @Model.Message
+</body>
+</html>

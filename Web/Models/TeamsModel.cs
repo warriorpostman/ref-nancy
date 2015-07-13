@@ -1,6 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-
 namespace Web.Models
 {
     public class TeamsModel
@@ -13,5 +10,17 @@ namespace Web.Models
     {
         public string Id { get; set; }
         public string Name { get; set; }
+    }
+
+    public class Player
+    {
+        public string Id { get; set; }
+        public string Name { get; set; }
+        public string Position { get; set; }
+    }
+
+    public class ErrorModel
+    {
+        public string Message { get; set; }
     }
 }
